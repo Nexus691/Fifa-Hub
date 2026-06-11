@@ -1,0 +1,644 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: FIFA Hub API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: fixtures
+    description: Match fixtures
+  - name: teams
+    description: Teams
+  - name: standings
+    description: Group standings
+  - name: news
+    description: FIFA news
+
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /fixtures:
+    get:
+      operationId: getFixtures
+      tags: [fixtures]
+      summary: Get all fixtures with optional filters
+      parameters:
+        - name: group
+          in: query
+          schema:
+            type: ["string", "null"]
+        - name: team
+          in: query
+          schema:
+            type: ["string", "null"]
+        - name: date
+          in: query
+          schema:
+            type: ["string", "null"]
+        - name: status
+          in: query
+          schema:
+            type: ["string", "null"]
+      responses:
+        "200":
+          description: List of fixtures
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Fixture"
+
+  /fixtures/live:
+    get:
+      operationId: getLiveFixtures
+      tags: [fixtures]
+      summary: Get currently live matches
+      responses:
+        "200":
+          description: Live fixtures
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Fixture"
+
+  /fixtures/upcoming:
+    get:
+      operationId: getUpcomingFixtures
+      tags: [fixtures]
+      summary: Get upcoming fixtures
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: ["integer", "null"]
+      responses:
+        "200":
+          description: Upcoming fixtures
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Fixture"
+
+  /fixtures/recent:
+    get:
+      operationId: getRecentFixtures
+      tags: [fixtures]
+      summary: Get recently completed fixtures
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: ["integer", "null"]
+      responses:
+        "200":
+          description: Recently completed fixtures
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Fixture"
+
+  /fixtures/{id}:
+    get:
+      operationId: getFixture
+      tags: [fixtures]
+      summary: Get a specific fixture with full details
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Fixture details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FixtureDetail"
+        "404":
+          description: Not found
+
+  /teams:
+    get:
+      operationId: getTeams
+      tags: [teams]
+      summary: Get all teams
+      parameters:
+        - name: group
+          in: query
+          schema:
+            type: ["string", "null"]
+        - name: search
+          in: query
+          schema:
+            type: ["string", "null"]
+      responses:
+        "200":
+          description: List of teams
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Team"
+
+  /teams/{id}:
+    get:
+      operationId: getTeam
+      tags: [teams]
+      summary: Get a specific team with squad and fixtures
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Team details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TeamDetail"
+        "404":
+          description: Not found
+
+  /standings:
+    get:
+      operationId: getStandings
+      tags: [standings]
+      summary: Get group standings
+      parameters:
+        - name: group
+          in: query
+          schema:
+            type: ["string", "null"]
+      responses:
+        "200":
+          description: Group standings
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GroupStanding"
+
+  /news:
+    get:
+      operationId: getNews
+      tags: [news]
+      summary: Get FIFA and World Cup news
+      parameters:
+        - name: team
+          in: query
+          schema:
+            type: ["string", "null"]
+        - name: page
+          in: query
+          schema:
+            type: ["integer", "null"]
+      responses:
+        "200":
+          description: News articles
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NewsResponse"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+
+    Team:
+      type: object
+      required: [id, name, logo, group, fifaRank]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        logo:
+          type: string
+        code:
+          type: ["string", "null"]
+        country:
+          type: ["string", "null"]
+        group:
+          type: ["string", "null"]
+        fifaRank:
+          type: ["integer", "null"]
+        coach:
+          type: ["string", "null"]
+
+    TeamDetail:
+      type: object
+      required: [id, name, logo, group, fifaRank]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        logo:
+          type: string
+        code:
+          type: ["string", "null"]
+        country:
+          type: ["string", "null"]
+        group:
+          type: ["string", "null"]
+        fifaRank:
+          type: ["integer", "null"]
+        coach:
+          type: ["string", "null"]
+        founded:
+          type: ["integer", "null"]
+        venue:
+          type: ["string", "null"]
+        players:
+          type: array
+          items:
+            $ref: "#/components/schemas/Player"
+        fixtures:
+          type: array
+          items:
+            $ref: "#/components/schemas/Fixture"
+        statistics:
+          $ref: "#/components/schemas/TeamStats"
+        manager:
+          type: ["string", "null"]
+        captain:
+          type: ["string", "null"]
+        qualifiedVia:
+          type: ["string", "null"]
+        appearances:
+          type: ["integer", "null"]
+        confederation:
+          type: ["string", "null"]
+        historicalStats:
+          type: ["object", "null"]
+        historyTimeline:
+          type: array
+          items:
+            type: object
+        insights:
+          type: array
+          items:
+            $ref: "#/components/schemas/TeamInsight"
+        news:
+          type: array
+          items:
+            $ref: "#/components/schemas/NewsArticle"
+        lineup:
+          $ref: "#/components/schemas/TeamLineup"
+
+    TeamLineup:
+      type: object
+      required: [formation, startingXI, bench]
+      properties:
+        formation:
+          type: string
+        startingXI:
+          type: array
+          items:
+            $ref: "#/components/schemas/TeamLineupPlayer"
+        bench:
+          type: array
+          items:
+            $ref: "#/components/schemas/TeamLineupPlayer"
+
+    TeamLineupPlayer:
+      type: object
+      required: [name, position, number]
+      properties:
+        name:
+          type: string
+        position:
+          type: string
+        number:
+          type: integer
+        x:
+          type: ["number", "null"]
+        y:
+          type: ["number", "null"]
+        age:
+          type: ["integer", "null"]
+        club:
+          type: ["string", "null"]
+        photoUrl:
+          type: ["string", "null"]
+        statusBadge:
+          type: ["string", "null"]
+        nationalStats:
+          type: object
+          properties:
+            caps:
+              type: integer
+            goals:
+              type: integer
+            assists:
+              type: integer
+            debut:
+              type: integer
+        tournamentStats:
+          type: object
+          properties:
+            appearances:
+              type: integer
+            goals:
+              type: integer
+            assists:
+              type: integer
+            minutes:
+              type: integer
+            rating:
+              type: number
+
+    TeamInsight:
+      type: object
+      required: [category, text]
+      properties:
+        category:
+          type: string
+        text:
+          type: string
+
+    Player:
+      type: object
+      required: [id, name, position]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        number:
+          type: ["integer", "null"]
+        position:
+          type: string
+        age:
+          type: ["integer", "null"]
+        photo:
+          type: ["string", "null"]
+
+    TeamStats:
+      type: object
+      properties:
+        played:
+          type: ["integer", "null"]
+        wins:
+          type: ["integer", "null"]
+        draws:
+          type: ["integer", "null"]
+        losses:
+          type: ["integer", "null"]
+        goalsFor:
+          type: ["integer", "null"]
+        goalsAgainst:
+          type: ["integer", "null"]
+
+    Fixture:
+      type: object
+      required: [id, homeTeam, awayTeam, date, status]
+      properties:
+        id:
+          type: integer
+        homeTeam:
+          $ref: "#/components/schemas/Team"
+        awayTeam:
+          $ref: "#/components/schemas/Team"
+        date:
+          type: string
+        status:
+          type: string
+        statusShort:
+          type: ["string", "null"]
+        homeScore:
+          type: ["integer", "null"]
+        awayScore:
+          type: ["integer", "null"]
+        venue:
+          type: ["string", "null"]
+        city:
+          type: ["string", "null"]
+        capacity:
+          type: ["integer", "null"]
+        group:
+          type: ["string", "null"]
+        round:
+          type: ["string", "null"]
+        elapsed:
+          type: ["integer", "null"]
+
+    FixtureDetail:
+      type: object
+      required: [id, homeTeam, awayTeam, date, status]
+      properties:
+        id:
+          type: integer
+        homeTeam:
+          $ref: "#/components/schemas/Team"
+        awayTeam:
+          $ref: "#/components/schemas/Team"
+        date:
+          type: string
+        status:
+          type: string
+        statusShort:
+          type: ["string", "null"]
+        homeScore:
+          type: ["integer", "null"]
+        awayScore:
+          type: ["integer", "null"]
+        venue:
+          type: ["string", "null"]
+        city:
+          type: ["string", "null"]
+        capacity:
+          type: ["integer", "null"]
+        group:
+          type: ["string", "null"]
+        round:
+          type: ["string", "null"]
+        elapsed:
+          type: ["integer", "null"]
+        events:
+          type: array
+          items:
+            $ref: "#/components/schemas/MatchEvent"
+        lineups:
+          type: array
+          items:
+            $ref: "#/components/schemas/Lineup"
+        statistics:
+          type: array
+          items:
+            $ref: "#/components/schemas/MatchStatistic"
+
+    MatchEvent:
+      type: object
+      required: [type]
+      properties:
+        time:
+          type: ["integer", "null"]
+        teamId:
+          type: ["integer", "null"]
+        teamName:
+          type: ["string", "null"]
+        playerName:
+          type: ["string", "null"]
+        assistName:
+          type: ["string", "null"]
+        type:
+          type: string
+        detail:
+          type: ["string", "null"]
+
+    Lineup:
+      type: object
+      required: [teamId, teamName, formation]
+      properties:
+        teamId:
+          type: integer
+        teamName:
+          type: string
+        teamLogo:
+          type: ["string", "null"]
+        formation:
+          type: string
+        startXI:
+          type: array
+          items:
+            $ref: "#/components/schemas/LineupPlayer"
+        substitutes:
+          type: array
+          items:
+            $ref: "#/components/schemas/LineupPlayer"
+
+    LineupPlayer:
+      type: object
+      required: [id, name, position]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        number:
+          type: ["integer", "null"]
+        position:
+          type: ["string", "null"]
+        grid:
+          type: ["string", "null"]
+
+    MatchStatistic:
+      type: object
+      required: [teamId, teamName]
+      properties:
+        teamId:
+          type: integer
+        teamName:
+          type: string
+        stats:
+          type: array
+          items:
+            $ref: "#/components/schemas/StatItem"
+
+    StatItem:
+      type: object
+      required: [type]
+      properties:
+        type:
+          type: string
+        value:
+          type: ["string", "null"]
+
+    GroupStanding:
+      type: object
+      required: [group, standings]
+      properties:
+        group:
+          type: string
+        standings:
+          type: array
+          items:
+            $ref: "#/components/schemas/StandingRow"
+
+    StandingRow:
+      type: object
+      required: [rank, team, played, points]
+      properties:
+        rank:
+          type: integer
+        team:
+          $ref: "#/components/schemas/Team"
+        played:
+          type: integer
+        wins:
+          type: integer
+        draws:
+          type: integer
+        losses:
+          type: integer
+        goalsFor:
+          type: integer
+        goalsAgainst:
+          type: integer
+        goalDifference:
+          type: integer
+        points:
+          type: integer
+
+    NewsArticle:
+      type: object
+      required: [title, publishedAt, source]
+      properties:
+        title:
+          type: string
+        description:
+          type: ["string", "null"]
+        url:
+          type: ["string", "null"]
+        urlToImage:
+          type: ["string", "null"]
+        publishedAt:
+          type: string
+        source:
+          type: string
+        author:
+          type: ["string", "null"]
+
+    NewsResponse:
+      type: object
+      required: [articles, totalResults]
+      properties:
+        articles:
+          type: array
+          items:
+            $ref: "#/components/schemas/NewsArticle"
+        totalResults:
+          type: integer

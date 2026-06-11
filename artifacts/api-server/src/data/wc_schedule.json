@@ -1,0 +1,650 @@
+[
+  {
+    "matchId": 80099,
+    "dateTime": "2026-06-11T19:00:00Z",
+    "team1": "Mexiko",
+    "team2": "Südafrika",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80100,
+    "dateTime": "2026-06-12T02:00:00Z",
+    "team1": "Südkorea",
+    "team2": "Tschechien",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80101,
+    "dateTime": "2026-06-12T19:00:00Z",
+    "team1": "Kanada",
+    "team2": "Bosnien und Herzegowina",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80102,
+    "dateTime": "2026-06-13T01:00:00Z",
+    "team1": "USA",
+    "team2": "Paraguay",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80104,
+    "dateTime": "2026-06-13T19:00:00Z",
+    "team1": "Katar",
+    "team2": "Schweiz",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80105,
+    "dateTime": "2026-06-13T22:00:00Z",
+    "team1": "Brasilien",
+    "team2": "Marokko",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80106,
+    "dateTime": "2026-06-14T01:00:00Z",
+    "team1": "Haiti",
+    "team2": "Schottland",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80103,
+    "dateTime": "2026-06-14T04:00:00Z",
+    "team1": "Australien",
+    "team2": "Türkei",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80107,
+    "dateTime": "2026-06-14T17:00:00Z",
+    "team1": "Deutschland",
+    "team2": "Curaçao",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80108,
+    "dateTime": "2026-06-14T20:00:00Z",
+    "team1": "Niederlande",
+    "team2": "Japan",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80109,
+    "dateTime": "2026-06-14T23:00:00Z",
+    "team1": "Elfenbeinküste",
+    "team2": "Ecuador",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80110,
+    "dateTime": "2026-06-15T02:00:00Z",
+    "team1": "Schweden",
+    "team2": "Tunesien",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80111,
+    "dateTime": "2026-06-15T16:00:00Z",
+    "team1": "Spanien",
+    "team2": "Kap Verde",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80112,
+    "dateTime": "2026-06-15T19:00:00Z",
+    "team1": "Belgien",
+    "team2": "Ägypten",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80113,
+    "dateTime": "2026-06-15T22:00:00Z",
+    "team1": "Saudi Arabien",
+    "team2": "Uruguay",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80114,
+    "dateTime": "2026-06-16T01:00:00Z",
+    "team1": "Iran",
+    "team2": "Neuseeland",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80115,
+    "dateTime": "2026-06-16T04:00:00Z",
+    "team1": "Österreich",
+    "team2": "Jordanien",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80116,
+    "dateTime": "2026-06-16T19:00:00Z",
+    "team1": "Frankreich",
+    "team2": "Senegal",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80117,
+    "dateTime": "2026-06-16T22:00:00Z",
+    "team1": "Irak",
+    "team2": "Norwegen",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80118,
+    "dateTime": "2026-06-17T01:00:00Z",
+    "team1": "Argentinien",
+    "team2": "Algerien",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80119,
+    "dateTime": "2026-06-17T17:00:00Z",
+    "team1": "Portugal",
+    "team2": "DR Kongo",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80120,
+    "dateTime": "2026-06-17T20:00:00Z",
+    "team1": "England",
+    "team2": "Kroatien",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80121,
+    "dateTime": "2026-06-17T23:00:00Z",
+    "team1": "Ghana",
+    "team2": "Panama",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80122,
+    "dateTime": "2026-06-18T02:00:00Z",
+    "team1": "Usbekistan",
+    "team2": "Kolumbien",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80124,
+    "dateTime": "2026-06-18T16:00:00Z",
+    "team1": "Tschechien",
+    "team2": "Südafrika",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80125,
+    "dateTime": "2026-06-18T19:00:00Z",
+    "team1": "Schweiz",
+    "team2": "Bosnien und Herzegowina",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80126,
+    "dateTime": "2026-06-18T22:00:00Z",
+    "team1": "Kanada",
+    "team2": "Katar",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80127,
+    "dateTime": "2026-06-19T01:00:00Z",
+    "team1": "Mexiko",
+    "team2": "Südkorea",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80128,
+    "dateTime": "2026-06-19T04:00:00Z",
+    "team1": "Türkei",
+    "team2": "Paraguay",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80129,
+    "dateTime": "2026-06-19T19:00:00Z",
+    "team1": "USA",
+    "team2": "Australien",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80130,
+    "dateTime": "2026-06-19T22:00:00Z",
+    "team1": "Schottland",
+    "team2": "Marokko",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80131,
+    "dateTime": "2026-06-20T01:00:00Z",
+    "team1": "Brasilien",
+    "team2": "Haiti",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80132,
+    "dateTime": "2026-06-20T04:00:00Z",
+    "team1": "Tunesien",
+    "team2": "Japan",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80133,
+    "dateTime": "2026-06-20T17:00:00Z",
+    "team1": "Niederlande",
+    "team2": "Schweden",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80134,
+    "dateTime": "2026-06-20T20:00:00Z",
+    "team1": "Deutschland",
+    "team2": "Elfenbeinküste",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80135,
+    "dateTime": "2026-06-21T00:00:00Z",
+    "team1": "Ecuador",
+    "team2": "Curaçao",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80136,
+    "dateTime": "2026-06-21T16:00:00Z",
+    "team1": "Spanien",
+    "team2": "Saudi Arabien",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80137,
+    "dateTime": "2026-06-21T19:00:00Z",
+    "team1": "Belgien",
+    "team2": "Iran",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80138,
+    "dateTime": "2026-06-21T22:00:00Z",
+    "team1": "Uruguay",
+    "team2": "Kap Verde",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80139,
+    "dateTime": "2026-06-22T01:00:00Z",
+    "team1": "Neuseeland",
+    "team2": "Ägypten",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80140,
+    "dateTime": "2026-06-22T17:00:00Z",
+    "team1": "Argentinien",
+    "team2": "Österreich",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80141,
+    "dateTime": "2026-06-22T21:00:00Z",
+    "team1": "Frankreich",
+    "team2": "Irak",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80142,
+    "dateTime": "2026-06-23T00:00:00Z",
+    "team1": "Norwegen",
+    "team2": "Senegal",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80143,
+    "dateTime": "2026-06-23T03:00:00Z",
+    "team1": "Jordanien",
+    "team2": "Algerien",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80144,
+    "dateTime": "2026-06-23T17:00:00Z",
+    "team1": "Portugal",
+    "team2": "Usbekistan",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80145,
+    "dateTime": "2026-06-23T20:00:00Z",
+    "team1": "England",
+    "team2": "Ghana",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80146,
+    "dateTime": "2026-06-23T23:00:00Z",
+    "team1": "Panama",
+    "team2": "Kroatien",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80147,
+    "dateTime": "2026-06-24T02:00:00Z",
+    "team1": "Kolumbien",
+    "team2": "DR Kongo",
+    "group": "Gruppenphase 2",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80148,
+    "dateTime": "2026-06-24T19:00:00Z",
+    "team1": "Schweiz",
+    "team2": "Kanada",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80149,
+    "dateTime": "2026-06-24T19:00:00Z",
+    "team1": "Bosnien und Herzegowina",
+    "team2": "Katar",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80150,
+    "dateTime": "2026-06-24T22:00:00Z",
+    "team1": "Marokko",
+    "team2": "Haiti",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80151,
+    "dateTime": "2026-06-24T22:00:00Z",
+    "team1": "Schottland",
+    "team2": "Brasilien",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80152,
+    "dateTime": "2026-06-25T01:00:00Z",
+    "team1": "Südafrika",
+    "team2": "Südkorea",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80153,
+    "dateTime": "2026-06-25T01:00:00Z",
+    "team1": "Tschechien",
+    "team2": "Mexiko",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80154,
+    "dateTime": "2026-06-25T20:00:00Z",
+    "team1": "Curaçao",
+    "team2": "Elfenbeinküste",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80155,
+    "dateTime": "2026-06-25T20:00:00Z",
+    "team1": "Ecuador",
+    "team2": "Deutschland",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80156,
+    "dateTime": "2026-06-25T23:00:00Z",
+    "team1": "Tunesien",
+    "team2": "Niederlande",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80157,
+    "dateTime": "2026-06-25T23:00:00Z",
+    "team1": "Japan",
+    "team2": "Schweden",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80158,
+    "dateTime": "2026-06-26T02:00:00Z",
+    "team1": "Türkei",
+    "team2": "USA",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80159,
+    "dateTime": "2026-06-26T02:00:00Z",
+    "team1": "Paraguay",
+    "team2": "Australien",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80160,
+    "dateTime": "2026-06-26T19:00:00Z",
+    "team1": "Norwegen",
+    "team2": "Frankreich",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80161,
+    "dateTime": "2026-06-26T19:00:00Z",
+    "team1": "Senegal",
+    "team2": "Irak",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80162,
+    "dateTime": "2026-06-27T00:00:00Z",
+    "team1": "Kap Verde",
+    "team2": "Saudi Arabien",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80163,
+    "dateTime": "2026-06-27T00:00:00Z",
+    "team1": "Uruguay",
+    "team2": "Spanien",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80164,
+    "dateTime": "2026-06-27T03:00:00Z",
+    "team1": "Neuseeland",
+    "team2": "Belgien",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80165,
+    "dateTime": "2026-06-27T03:00:00Z",
+    "team1": "Ägypten",
+    "team2": "Iran",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80166,
+    "dateTime": "2026-06-27T21:00:00Z",
+    "team1": "Panama",
+    "team2": "England",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80167,
+    "dateTime": "2026-06-27T21:00:00Z",
+    "team1": "Kroatien",
+    "team2": "Ghana",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80168,
+    "dateTime": "2026-06-27T23:30:00Z",
+    "team1": "Kolumbien",
+    "team2": "Portugal",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80169,
+    "dateTime": "2026-06-27T23:30:00Z",
+    "team1": "DR Kongo",
+    "team2": "Usbekistan",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80170,
+    "dateTime": "2026-06-28T02:00:00Z",
+    "team1": "Algerien",
+    "team2": "Österreich",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80171,
+    "dateTime": "2026-06-28T02:00:00Z",
+    "team1": "Jordanien",
+    "team2": "Argentinien",
+    "group": "Gruppenphase 3",
+    "isFinished": false,
+    "location": null
+  }
+]
