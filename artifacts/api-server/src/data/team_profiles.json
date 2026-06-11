@@ -844,32 +844,8 @@
       }
     ],
     "lineup": {
-      "formation": "4-3-3",
+      "formation": "4-1-2-3",
       "startingXI": [
-        {
-          "name": "G. Ochoa",
-          "position": "GK",
-          "number": 13,
-          "x": 50,
-          "y": 90,
-          "age": 40,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/2098.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
         {
           "name": "J. Gallardo",
           "position": "LB",
@@ -898,8 +874,8 @@
           "name": "C. Montes",
           "position": "CB",
           "number": 3,
-          "x": 38,
-          "y": 75,
+          "x": 65,
+          "y": 70,
           "age": 28,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/2873.png",
@@ -919,34 +895,10 @@
           }
         },
         {
-          "name": "J. Sánchez",
-          "position": "CB",
-          "number": 2,
-          "x": 62,
-          "y": 75,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/2878.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 100,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
           "name": "J. Vásquez",
           "position": "RB",
           "number": 5,
-          "x": 85,
+          "x": 35,
           "y": 70,
           "age": 27,
           "club": null,
@@ -967,160 +919,14 @@
           }
         },
         {
-          "name": "E. Álvarez",
-          "position": "CM",
-          "number": 4,
-          "x": 25,
-          "y": 48,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/2869.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 51,
-            "goals": 14,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "L. Chávez",
-          "position": "CDM",
-          "number": 24,
-          "x": 50,
-          "y": 55,
-          "age": 29,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/35690.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 1,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "O. Pineda",
-          "position": "CM",
-          "number": 17,
-          "x": 75,
-          "y": 48,
-          "age": 29,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/35576.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 90,
-            "goals": 12,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "S. Giménez",
-          "position": "LW",
-          "number": 11,
-          "x": 15,
-          "y": 22,
-          "age": 24,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/94562.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 99,
-            "goals": 8,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "A. González",
-          "position": "ST",
-          "number": 14,
-          "x": 50,
-          "y": 15,
-          "age": 22,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/291713.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 102,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
           "name": "R. Jiménez",
           "position": "RW",
           "number": 9,
-          "x": 85,
-          "y": 22,
+          "x": 50,
+          "y": 15,
           "age": 34,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/2887.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        }
-      ],
-      "bench": [
-        {
-          "name": "C. Acevedo",
-          "position": "GK",
-          "number": 12,
-          "x": null,
-          "y": null,
-          "age": 29,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/35769.png",
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
             "caps": 0,
@@ -1140,8 +946,8 @@
           "name": "J. Rangel",
           "position": "GK",
           "number": 1,
-          "x": null,
-          "y": null,
+          "x": 50,
+          "y": 90,
           "age": 25,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/270774.png",
@@ -1164,11 +970,325 @@
           "name": "I. Reyes",
           "position": "DEF",
           "number": 15,
-          "x": null,
-          "y": null,
+          "x": 85,
+          "y": 70,
           "age": 25,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/127227.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "Álvaro Fidalgo",
+          "position": "MID",
+          "number": 8,
+          "x": 65,
+          "y": 40,
+          "age": 28,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/750.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 3,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "B. Gutiérrez",
+          "position": "MID",
+          "number": 26,
+          "x": 35,
+          "y": 40,
+          "age": 22,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/212233.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 5,
+            "goals": 1,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "É. Lira",
+          "position": "MID",
+          "number": 6,
+          "x": 50,
+          "y": 55,
+          "age": 25,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/266345.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 22,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "R. Alvarado",
+          "position": "MID",
+          "number": 25,
+          "x": 80,
+          "y": 20,
+          "age": 27,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/2879.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 66,
+            "goals": 5,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "J. Quiñones",
+          "position": "MID",
+          "number": 16,
+          "x": 20,
+          "y": 20,
+          "age": 28,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/35532.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        }
+      ],
+      "bench": [
+        {
+          "name": "G. Ochoa",
+          "position": "GK",
+          "number": 13,
+          "x": null,
+          "y": null,
+          "age": 40,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/2098.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "J. Sánchez",
+          "position": "CB",
+          "number": 2,
+          "x": null,
+          "y": null,
+          "age": 28,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/2878.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 100,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "E. Álvarez",
+          "position": "CM",
+          "number": 4,
+          "x": null,
+          "y": null,
+          "age": 28,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/2869.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 51,
+            "goals": 14,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "L. Chávez",
+          "position": "CDM",
+          "number": 24,
+          "x": null,
+          "y": null,
+          "age": 29,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/35690.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 1,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "O. Pineda",
+          "position": "CM",
+          "number": 17,
+          "x": null,
+          "y": null,
+          "age": 29,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/35576.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 90,
+            "goals": 12,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "S. Giménez",
+          "position": "LW",
+          "number": 11,
+          "x": null,
+          "y": null,
+          "age": 24,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/94562.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 99,
+            "goals": 8,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "A. González",
+          "position": "ST",
+          "number": 14,
+          "x": null,
+          "y": null,
+          "age": 22,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/291713.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 102,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "C. Acevedo",
+          "position": "GK",
+          "number": 12,
+          "x": null,
+          "y": null,
+          "age": 29,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/35769.png",
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
             "caps": 0,
@@ -1233,78 +1353,6 @@
           }
         },
         {
-          "name": "Álvaro Fidalgo",
-          "position": "MID",
-          "number": 8,
-          "x": null,
-          "y": null,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/750.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 3,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "B. Gutiérrez",
-          "position": "MID",
-          "number": 26,
-          "x": null,
-          "y": null,
-          "age": 22,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/212233.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 5,
-            "goals": 1,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "É. Lira",
-          "position": "MID",
-          "number": 6,
-          "x": null,
-          "y": null,
-          "age": 25,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/266345.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 22,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
           "name": "G. Mora",
           "position": "MID",
           "number": 19,
@@ -1353,30 +1401,6 @@
           }
         },
         {
-          "name": "R. Alvarado",
-          "position": "MID",
-          "number": 25,
-          "x": null,
-          "y": null,
-          "age": 27,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/2879.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 66,
-            "goals": 5,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
           "name": "C. Huerta",
           "position": "MID",
           "number": 21,
@@ -1412,30 +1436,6 @@
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
             "caps": 2,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "J. Quiñones",
-          "position": "MID",
-          "number": 16,
-          "x": null,
-          "y": null,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/35532.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
             "goals": 0,
             "assists": 0,
             "debut": 0
