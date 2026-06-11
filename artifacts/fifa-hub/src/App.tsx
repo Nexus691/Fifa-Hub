@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/sonner";
 import { Navbar } from "@/components/layout/Navbar";
 import { PageTransition } from "@/components/layout/PageTransition";
 import { LiveTicker } from "@/components/layout/LiveTicker";
+import { BootLoader } from "@/components/layout/BootLoader";
+import { AnimatePresence } from "framer-motion";
 import Home from "@/pages/Home";
 import Fixtures from "@/pages/Fixtures";
 import FixtureDetail from "@/pages/FixtureDetail";
@@ -43,43 +45,54 @@ function ScrollToTop() {
 
 function Router() {
   const [location] = useLocation();
+  const [isBooted, setIsBooted] = React.useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
-      <MouseTrail />
-      <ScrollToTop />
-      <Navbar />
-      <div className="flex-1 flex flex-col pt-[72px]">
-        {location === "/" && <LiveTicker />}
-        <main className="flex-1">
-          <PageTransition>
-            <Switch location={location}>
-              <Route path="/" component={Home} />
-              <Route path="/fixtures" component={Fixtures} />
-              <Route path="/fixtures/:id" component={FixtureDetail} />
-              <Route path="/teams" component={Teams} />
-              <Route path="/teams/:id" component={TeamDetail} />
-              <Route path="/groups" component={Groups} />
-              <Route path="/bracket" component={Bracket} />
-          <Route path="/about" component={About} />
-          <Route path="/stadiums" component={Stadiums} />
-          <Route path="/host-cities" component={HostCities} />
-          <Route path="/history" component={History} />
-          <Route path="/records" component={Records} />
-          
-          {/* Stubs for future phases */}
-              <Route path="/news" component={News} />
-              <Route path="/stats" component={Stats} />
-              <Route>
-                <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4">
-                  <span className="font-display text-6xl text-primary">404</span>
-                  <p className="text-muted-foreground">Page not found</p>
-                </div>
-              </Route>
-            </Switch>
-          </PageTransition>
-        </main>
-      </div>
+      <AnimatePresence>
+        {!isBooted && (
+          <BootLoader key="bootloader" onReady={() => setIsBooted(true)} />
+        )}
+      </AnimatePresence>
+
+      {isBooted && (
+        <>
+          <MouseTrail />
+          <ScrollToTop />
+          <Navbar />
+          <div className="flex-1 flex flex-col pt-[72px]">
+            {location === "/" && <LiveTicker />}
+            <main className="flex-1">
+              <PageTransition>
+                <Switch location={location}>
+                  <Route path="/" component={Home} />
+                  <Route path="/fixtures" component={Fixtures} />
+                  <Route path="/fixtures/:id" component={FixtureDetail} />
+                  <Route path="/teams" component={Teams} />
+                  <Route path="/teams/:id" component={TeamDetail} />
+                  <Route path="/groups" component={Groups} />
+                  <Route path="/bracket" component={Bracket} />
+                  <Route path="/about" component={About} />
+                  <Route path="/stadiums" component={Stadiums} />
+                  <Route path="/host-cities" component={HostCities} />
+                  <Route path="/history" component={History} />
+                  <Route path="/records" component={Records} />
+                  
+                  {/* Stubs for future phases */}
+                  <Route path="/news" component={News} />
+                  <Route path="/stats" component={Stats} />
+                  <Route>
+                    <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4">
+                      <span className="font-display text-6xl text-primary">404</span>
+                      <p className="text-muted-foreground">Page not found</p>
+                    </div>
+                  </Route>
+                </Switch>
+              </PageTransition>
+            </main>
+          </div>
+        </>
+      )}
     </div>
   );
 }
