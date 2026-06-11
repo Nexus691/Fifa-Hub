@@ -35,13 +35,32 @@ Make sure you have [Node.js](https://nodejs.org/) (v18+) and [pnpm](https://pnpm
    pnpm install
    ```
 
-3. **Start the development server**
+3. **Set up Environment Variables**
+   The project requires a backend API server to scrape and serve football data.
+   Navigate to the `artifacts/api-server` directory and create a `.env` file based on `.env.example`:
    ```bash
+   cd artifacts/api-server
+   # Create a .env file and add your API keys:
+   # API_FOOTBALL_KEY=your_key_here (from https://www.api-football.com/)
+   # NEWS_API_KEY=your_key_here (from https://newsapi.org/)
+   ```
+
+4. **Start the Backend Server**
+   ```bash
+   # From the artifacts/api-server directory
    pnpm run dev
    ```
 
-4. **Open your browser**
-   Navigate to `http://localhost:5173` (or the port specified in your terminal) to view the app!
+5. **Start the Frontend Development Server**
+   Open a new terminal, return to the project root, and start the frontend:
+   ```bash
+   # From the root Fifa-Hub directory
+   cd artifacts/fifa-hub
+   pnpm run dev
+   ```
+
+6. **Open your browser**
+   Navigate to `http://localhost:5173` to view the app!
 
 ## 🛠 Tech Stack
 
