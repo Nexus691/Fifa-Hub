@@ -345,13 +345,13 @@ export async function runPrioritySync(): Promise<boolean> {
 
 /**
  * MATCH-DAY SYNC — runs every hour during the tournament.
- * Only fetches fresh data for teams that have a match within ±4 hours.
+ * Only fetches fresh data for teams that have a match within ±2 hours.
  * Uses OpenLigaDB (free, no quota) to check the schedule.
  */
 export async function runMatchDaySync() {
   logger.info('=== MATCH-DAY SYNC: Checking for teams playing today ===');
 
-  const { teams: matchDayTeams, matches } = await getTeamsPlayingToday(4);
+  const { teams: matchDayTeams, matches } = await getTeamsPlayingToday(2);
 
   // Translate OpenLigaDB German names to our English DB keys
   const dbTeamNames = matchDayTeams.map(resolveTeamName);

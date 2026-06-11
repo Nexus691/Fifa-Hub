@@ -15,9 +15,9 @@ app.listen(port, (err) => {
 
   // Smart background scraper:
   // - On first run or every 24h: full sync of all 48 teams (uses API-Football quota)
-  // - Every other hour: only syncs teams with matches within ±4h (uses FREE OpenLigaDB schedule)
-  cron.schedule("0 * * * *", () => {
-    logger.info("Triggering hourly smart scrape...");
+  // - Every 15 minutes: only syncs teams with matches within ±2h (uses FREE OpenLigaDB schedule)
+  cron.schedule("*/15 * * * *", () => {
+    logger.info("Triggering 15-minute smart scrape...");
     runScraper();
   });
   
