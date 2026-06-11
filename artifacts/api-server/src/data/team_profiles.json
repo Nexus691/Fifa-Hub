@@ -1556,37 +1556,13 @@
       }
     ],
     "lineup": {
-      "formation": "4-3-3",
+      "formation": "3-5-2",
       "startingXI": [
-        {
-          "name": "S. Chaine",
-          "position": "GK",
-          "number": 16,
-          "x": 50,
-          "y": 90,
-          "age": 29,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/46417.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
         {
           "name": "B. Cross",
           "position": "LB",
           "number": 26,
-          "x": 15,
+          "x": 35,
           "y": 70,
           "age": 24,
           "club": null,
@@ -1607,58 +1583,10 @@
           }
         },
         {
-          "name": "S. Kabini",
-          "position": "CB",
-          "number": 18,
-          "x": 38,
-          "y": 75,
-          "age": 21,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/430078.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "O. Makhanya",
-          "position": "CB",
-          "number": 24,
-          "x": 62,
-          "y": 75,
-          "age": 21,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/392387.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
           "name": "M. Mbokazi",
           "position": "RB",
           "number": 14,
-          "x": 85,
+          "x": 50,
           "y": 70,
           "age": 20,
           "club": null,
@@ -1682,8 +1610,8 @@
           "name": "J. Adams",
           "position": "CM",
           "number": 23,
-          "x": 25,
-          "y": 48,
+          "x": 60,
+          "y": 15,
           "age": 24,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/268710.png",
@@ -1706,8 +1634,8 @@
           "name": "T. Mbatha",
           "position": "CDM",
           "number": 5,
-          "x": 50,
-          "y": 55,
+          "x": 30,
+          "y": 35,
           "age": 25,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/194430.png",
@@ -1730,8 +1658,8 @@
           "name": "T. Mokoena",
           "position": "CM",
           "number": 4,
-          "x": 75,
-          "y": 48,
+          "x": 50,
+          "y": 50,
           "age": 28,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/3287.png",
@@ -1751,34 +1679,10 @@
           }
         },
         {
-          "name": "O. Appollis",
-          "position": "LW",
-          "number": 7,
-          "x": 15,
-          "y": 22,
-          "age": 24,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/179893.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
           "name": "L. Foster",
           "position": "ST",
           "number": 9,
-          "x": 50,
+          "x": 40,
           "y": 15,
           "age": 25,
           "club": null,
@@ -1799,61 +1703,11 @@
           }
         },
         {
-          "name": "E. Makgopa",
-          "position": "RW",
-          "number": 99,
-          "x": 85,
-          "y": 22,
-          "age": 25,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/201354.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 24,
-            "goals": 6,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        }
-      ],
-      "bench": [
-        {
-          "name": "R. Goss",
-          "position": "GK",
-          "number": 22,
-          "x": null,
-          "y": null,
-          "age": 31,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/46245.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
           "name": "R. Williams",
           "position": "GK",
           "number": 1,
-          "x": null,
-          "y": null,
+          "x": 50,
+          "y": 90,
           "age": 33,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/3275.png",
@@ -1876,8 +1730,8 @@
           "name": "A. Modiba",
           "position": "DEF",
           "number": 6,
-          "x": null,
-          "y": null,
+          "x": 15,
+          "y": 70,
           "age": 30,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/46334.png",
@@ -1900,11 +1754,205 @@
           "name": "K. Mudau",
           "position": "DEF",
           "number": 20,
-          "x": null,
-          "y": null,
+          "x": 85,
+          "y": 70,
           "age": 30,
           "club": null,
           "photoUrl": "https://media.api-sports.io/football/players/46601.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "N. Sibisi",
+          "position": "DEF",
+          "number": 19,
+          "x": 65,
+          "y": 70,
+          "age": 30,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/46458.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "I. Rayners",
+          "position": "FWD",
+          "number": 15,
+          "x": 70,
+          "y": 35,
+          "age": 30,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/127429.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        }
+      ],
+      "bench": [
+        {
+          "name": "S. Chaine",
+          "position": "GK",
+          "number": 16,
+          "x": null,
+          "y": null,
+          "age": 29,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/46417.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "S. Kabini",
+          "position": "CB",
+          "number": 18,
+          "x": null,
+          "y": null,
+          "age": 21,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/430078.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "O. Makhanya",
+          "position": "CB",
+          "number": 24,
+          "x": null,
+          "y": null,
+          "age": 21,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/392387.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "O. Appollis",
+          "position": "LW",
+          "number": 7,
+          "x": null,
+          "y": null,
+          "age": 24,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/179893.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 0,
+            "goals": 0,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "E. Makgopa",
+          "position": "RW",
+          "number": 99,
+          "x": null,
+          "y": null,
+          "age": 25,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/201354.png",
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 24,
+            "goals": 6,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "R. Goss",
+          "position": "GK",
+          "number": 22,
+          "x": null,
+          "y": null,
+          "age": 31,
+          "club": null,
+          "photoUrl": "https://media.api-sports.io/football/players/46245.png",
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
             "caps": 0,
@@ -1956,30 +2004,6 @@
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
             "caps": 28,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "N. Sibisi",
-          "position": "DEF",
-          "number": 19,
-          "x": null,
-          "y": null,
-          "age": 30,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/46458.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
             "goals": 0,
             "assists": 0,
             "debut": 0
@@ -2125,30 +2149,6 @@
           "nationalStats": {
             "caps": 7,
             "goals": 1,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "I. Rayners",
-          "position": "FWD",
-          "number": 15,
-          "x": null,
-          "y": null,
-          "age": 30,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/127429.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
             "assists": 0,
             "debut": 0
           },
