@@ -10,7 +10,8 @@ export function Countdown() {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2026-06-11T19:00:00Z").getTime(); // June 12, 12:30 AM IST
+    // Set to 2026 World Cup Opening Ceremony (17:30 GMT / 1:30 PM ET)
+    const targetDate = new Date("2026-06-11T17:30:00Z").getTime(); 
 
     const updateCountdown = () => {
       const now = new Date().getTime();
