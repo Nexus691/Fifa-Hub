@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 export function Countdown() {
   const [timeLeft, setTimeLeft] = useState({
@@ -8,6 +8,7 @@ export function Countdown() {
     minutes: 0,
     seconds: 0
   });
+  const [isLive, setIsLive] = useState(false);
 
   useEffect(() => {
     // Set to 2026 World Cup Opening Ceremony (17:30 GMT / 1:30 PM ET)
@@ -18,7 +19,7 @@ export function Countdown() {
       const distance = targetDate - now;
 
       if (distance < 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        setIsLive(true);
         return;
       }
 
@@ -34,6 +35,29 @@ export function Countdown() {
     const interval = setInterval(updateCountdown, 1000);
     return () => clearInterval(interval);
   }, []);
+
+  if (isLive) {
+    return (
+      <div className="flex flex-col items-center justify-center py-6">
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-center"
+        >
+          <div className="relative inline-block">
+            <div className="absolute -inset-4 bg-primary/20 blur-xl rounded-full animate-pulse"></div>
+            <h2 className="relative font-display text-4xl md:text-6xl text-primary tracking-widest drop-shadow-[0_0_15px_rgba(212,175,55,0.5)]">
+              THE TOURNAMENT IS LIVE
+            </h2>
+          </div>
+          <p className="mt-4 text-sm md:text-base text-gray-400 tracking-[0.3em] uppercase">
+            Follow every moment
+          </p>
+        </motion.div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex items-center justify-center gap-6 md:gap-10">
