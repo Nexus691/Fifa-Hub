@@ -72,7 +72,7 @@ function mapFixture(
     capacity: stadium?.capacity ?? null,
     group: mapGroupLabel(game.group),
     round: mapRound(game.type),
-    elapsed: null,
+    elapsed: status.elapsedMinutes ?? null,
   };
 }
 

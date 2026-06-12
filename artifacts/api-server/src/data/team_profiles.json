@@ -3218,19 +3218,18 @@
       "formation": "4-3-3",
       "startingXI": [
         {
-          "name": "E. Burns",
+          "name": "Maxime Crépeau",
           "position": "GK",
-          "number": 31,
+          "number": 16,
           "x": 50,
           "y": 90,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/330833.png",
+          "age": 25,
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3242,19 +3241,18 @@
           }
         },
         {
-          "name": "K. Buchanan",
+          "name": "Alphonso Davies",
           "position": "LB",
-          "number": 3,
+          "number": 19,
           "x": 15,
           "y": 70,
-          "age": 30,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/74241.png",
-          "statusBadge": "🟢 Squad Member",
+          "age": 25,
+          "photoUrl": null,
+          "statusBadge": "👑 Captain",
           "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3266,19 +3264,18 @@
           }
         },
         {
-          "name": "G. Carle",
+          "name": "Kamal Miller",
           "position": "CB",
-          "number": 21,
-          "x": 38,
-          "y": 75,
-          "age": 27,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68955.png",
+          "number": 4,
+          "x": 35,
+          "y": 70,
+          "age": 25,
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3290,19 +3287,18 @@
           }
         },
         {
-          "name": "S. Collins",
+          "name": "Moïse Bombito",
           "position": "CB",
-          "number": 24,
-          "x": 62,
-          "y": 75,
-          "age": 26,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/413089.png",
+          "number": 15,
+          "x": 65,
+          "y": 70,
+          "age": 25,
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 1,
-            "goals": 0,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3314,19 +3310,18 @@
           }
         },
         {
-          "name": "B. Courtnall",
+          "name": "Alistair Johnston",
           "position": "RB",
-          "number": 34,
+          "number": 2,
           "x": 85,
           "y": 70,
-          "age": 22,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/536158.png",
+          "age": 25,
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3338,67 +3333,18 @@
           }
         },
         {
-          "name": "S. Awujo",
-          "position": "CM",
-          "number": 13,
-          "x": 25,
-          "y": 48,
-          "age": 22,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/380094.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "J. Fleming",
-          "position": "CDM",
-          "number": 17,
-          "x": 50,
-          "y": 55,
-          "age": 27,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68947.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "J. Grosso",
+          "name": "Stephen Eustáquio",
           "position": "CM",
           "number": 7,
-          "x": 75,
-          "y": 48,
+          "x": 35,
+          "y": 45,
           "age": 25,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/536114.png",
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3410,19 +3356,18 @@
           }
         },
         {
-          "name": "M. Alidou",
-          "position": "LW",
-          "number": 26,
-          "x": 15,
-          "y": 22,
-          "age": 30,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/144859.png",
+          "name": "Ismaël Koné",
+          "position": "CM",
+          "number": 8,
+          "x": 65,
+          "y": 45,
+          "age": 25,
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 10,
-            "goals": 0,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3434,19 +3379,64 @@
           }
         },
         {
-          "name": "Annabelle Chukwu",
+          "name": "Jonathan Osorio",
+          "position": "CAM",
+          "number": 21,
+          "x": 50,
+          "y": 35,
+          "age": 25,
+          "photoUrl": null,
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "Tajon Buchanan",
+          "position": "RW",
+          "number": 11,
+          "x": 85,
+          "y": 20,
+          "age": 25,
+          "photoUrl": null,
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "Jonathan David",
           "position": "ST",
-          "number": 29,
+          "number": 20,
           "x": 50,
           "y": 15,
-          "age": 18,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/614762.png",
+          "age": 25,
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 5,
-            "goals": 2,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3458,19 +3448,18 @@
           }
         },
         {
-          "name": "J. Huitema",
-          "position": "RW",
+          "name": "Cyle Larin",
+          "position": "LW",
           "number": 9,
-          "x": 85,
-          "y": 22,
-          "age": 24,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68956.png",
+          "x": 15,
+          "y": 20,
+          "age": 25,
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
+            "caps": 30,
+            "goals": 5,
+            "assists": 2,
             "debut": 0
           },
           "tournamentStats": {
@@ -3484,233 +3473,16 @@
       ],
       "bench": [
         {
-          "name": "S. D&apos;Angelo",
-          "position": "GK",
-          "number": 18,
-          "x": null,
-          "y": null,
-          "age": 32,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/74301.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "Melissa Dagenais",
-          "position": "GK",
-          "number": 35,
-          "x": null,
-          "y": null,
-          "age": 25,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/646455.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "K. Sheridan",
+          "name": "Dayne St. Clair",
           "position": "GK",
           "number": 1,
           "x": null,
           "y": null,
-          "age": 30,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68941.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "V. Gilles",
-          "position": "DEF",
-          "number": 14,
-          "x": null,
-          "y": null,
-          "age": 29,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68944.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 13,
-            "goals": 2,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "M. Levasseur",
-          "position": "DEF",
-          "number": 28,
-          "x": null,
-          "y": null,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/203884.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 17,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "M. Reid",
-          "position": "DEF",
-          "number": 33,
-          "x": null,
-          "y": null,
-          "age": 29,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/362388.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "J. Rose",
-          "position": "DEF",
-          "number": 12,
-          "x": null,
-          "y": null,
-          "age": 22,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68951.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "J. Beckie",
-          "position": "DEF",
-          "number": 16,
-          "x": null,
-          "y": null,
-          "age": 31,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68954.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 126,
-            "goals": 37,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "S. Zadorsky",
-          "position": "DEF",
-          "number": 20,
-          "x": null,
-          "y": null,
-          "age": 33,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68946.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "E. Regan",
-          "position": "MID",
-          "number": 25,
-          "x": null,
-          "y": null,
           "age": 25,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/414291.png",
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
-            "caps": 8,
+            "caps": 10,
             "goals": 1,
             "assists": 0,
             "debut": 0
@@ -3724,210 +3496,63 @@
           }
         },
         {
-          "name": "O. Smith",
+          "name": "Samuel Piette",
           "position": "MID",
-          "number": 10,
+          "number": 6,
           "x": null,
           "y": null,
-          "age": 21,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/380028.png",
-          "statusBadge": "👑 Captain",
-          "nationalStats": {
-            "caps": 20,
-            "goals": 11,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "C. Wickenheiser",
-          "position": "MID",
-          "number": 0,
-          "x": null,
-          "y": null,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/298666.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "K. Hunter",
-          "position": "FWD",
-          "number": 30,
-          "x": null,
-          "y": null,
-          "age": 18,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/549902.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "C. Lacasse",
-          "position": "FWD",
-          "number": 20,
-          "x": null,
-          "y": null,
-          "age": 32,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/290326.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 42,
-            "goals": 6,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "D. Pridham",
-          "position": "FWD",
-          "number": 32,
-          "x": null,
-          "y": null,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/313415.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "N. Prince",
-          "position": "FWD",
-          "number": 15,
-          "x": null,
-          "y": null,
-          "age": 30,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68958.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "J. Riviere",
-          "position": "FWD",
-          "number": 8,
-          "x": null,
-          "y": null,
-          "age": 24,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/68959.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 0,
-            "goals": 0,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "É. Viens",
-          "position": "FWD",
-          "number": 11,
-          "x": null,
-          "y": null,
-          "age": 28,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/228906.png",
-          "statusBadge": "🟢 Squad Member",
-          "nationalStats": {
-            "caps": 47,
-            "goals": 9,
-            "assists": 0,
-            "debut": 0
-          },
-          "tournamentStats": {
-            "appearances": 0,
-            "goals": 0,
-            "assists": 0,
-            "minutes": 0,
-            "rating": 0
-          }
-        },
-        {
-          "name": "Holly Ward",
-          "position": "FWD",
-          "number": 27,
-          "x": null,
-          "y": null,
-          "age": 22,
-          "club": null,
-          "photoUrl": "https://media.api-sports.io/football/players/614763.png",
+          "age": 25,
+          "photoUrl": null,
           "statusBadge": "🟢 Squad Member",
           "nationalStats": {
             "caps": 10,
-            "goals": 2,
+            "goals": 1,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "Liam Millar",
+          "position": "FWD",
+          "number": 14,
+          "x": null,
+          "y": null,
+          "age": 25,
+          "photoUrl": null,
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 10,
+            "goals": 1,
+            "assists": 0,
+            "debut": 0
+          },
+          "tournamentStats": {
+            "appearances": 0,
+            "goals": 0,
+            "assists": 0,
+            "minutes": 0,
+            "rating": 0
+          }
+        },
+        {
+          "name": "Jacob Shaffelburg",
+          "position": "FWD",
+          "number": 17,
+          "x": null,
+          "y": null,
+          "age": 25,
+          "photoUrl": null,
+          "statusBadge": "🟢 Squad Member",
+          "nationalStats": {
+            "caps": 10,
+            "goals": 1,
             "assists": 0,
             "debut": 0
           },

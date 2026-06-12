@@ -5,7 +5,7 @@
     "team1": "Mexiko",
     "team2": "Südafrika",
     "group": "Gruppenphase 1",
-    "isFinished": false,
+    "isFinished": true,
     "location": null
   },
   {
@@ -14,7 +14,7 @@
     "team1": "Südkorea",
     "team2": "Tschechien",
     "group": "Gruppenphase 1",
-    "isFinished": false,
+    "isFinished": true,
     "location": null
   },
   {
@@ -144,15 +144,6 @@
     "location": null
   },
   {
-    "matchId": 80115,
-    "dateTime": "2026-06-16T04:00:00Z",
-    "team1": "Österreich",
-    "team2": "Jordanien",
-    "group": "Gruppenphase 1",
-    "isFinished": false,
-    "location": null
-  },
-  {
     "matchId": 80116,
     "dateTime": "2026-06-16T19:00:00Z",
     "team1": "Frankreich",
@@ -175,6 +166,15 @@
     "dateTime": "2026-06-17T01:00:00Z",
     "team1": "Argentinien",
     "team2": "Algerien",
+    "group": "Gruppenphase 1",
+    "isFinished": false,
+    "location": null
+  },
+  {
+    "matchId": 80115,
+    "dateTime": "2026-06-17T04:00:00Z",
+    "team1": "Österreich",
+    "team2": "Jordanien",
     "group": "Gruppenphase 1",
     "isFinished": false,
     "location": null

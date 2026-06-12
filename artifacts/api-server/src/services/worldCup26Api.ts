@@ -93,70 +93,68 @@ export interface WC26Stadium {
   region: string;
 }
 
+// ---------- Fetch coalescing and queuing ----------
+
+let activeRequest = Promise.resolve();
+async function queuedGet<T>(url: string): Promise<T> {
+  const current = activeRequest;
+  let resolveNext!: () => void;
+  const next = new Promise<void>((resolve) => { resolveNext = resolve; });
+  activeRequest = current.then(() => next).catch(() => next);
+  
+  await current.catch(() => {});
+  try {
+    const res = await api.get<T>(url);
+    return res.data;
+  } finally {
+    resolveNext();
+  }
+}
+
+const pendingRequests = new Map<string, Promise<any>>();
+
+function coalescedFetch<T>(key: string, url: string, fallback: T): Promise<T> {
+  const cached = getCached<T>(key);
+  if (cached) return Promise.resolve(cached);
+
+  if (pendingRequests.has(key)) {
+    return pendingRequests.get(key) as Promise<T>;
+  }
+
+  const promise = (async () => {
+    try {
+      const data = await queuedGet<any>(url);
+      const result = data[key.split("-")[1]] ?? fallback;
+      setCached(key, result);
+      return result;
+    } catch (err) {
+      logger.error({ err }, `${key} fetch failed`);
+      return fallback;
+    } finally {
+      pendingRequests.delete(key);
+    }
+  })();
+  
+  pendingRequests.set(key, promise);
+  return promise;
+}
+
 // ---------- Fetch functions ----------
 
 export async function fetchAllTeams(): Promise<WC26Team[]> {
-  const key = "wc26-teams";
-  const cached = getCached<WC26Team[]>(key);
-  if (cached) return cached;
-
-  try {
-    const res = await api.get<{ teams: WC26Team[] }>("/get/teams");
-    const teams = res.data.teams ?? [];
-    setCached(key, teams);
-    return teams;
-  } catch (err) {
-    logger.error({ err }, "WC26 teams fetch failed");
-    return [];
-  }
+  return coalescedFetch<WC26Team[]>("wc26-teams", "/get/teams", []);
 }
 
 export async function fetchAllGames(): Promise<WC26Game[]> {
-  const key = "wc26-games";
-  const cached = getCached<WC26Game[]>(key);
-  if (cached) return cached;
-
-  try {
-    const res = await api.get<{ games: WC26Game[] }>("/get/games");
-    const games = res.data.games ?? [];
-    setCached(key, games);
-    return games;
-  } catch (err) {
-    logger.error({ err }, "WC26 games fetch failed");
-    return [];
-  }
+  return coalescedFetch<WC26Game[]>("wc26-games", "/get/games", []);
 }
 
 export async function fetchAllGroups(): Promise<WC26Group[]> {
-  const key = "wc26-groups";
-  const cached = getCached<WC26Group[]>(key);
-  if (cached) return cached;
-
-  try {
-    const res = await api.get<{ groups: WC26Group[] }>("/get/groups");
-    const groups = res.data.groups ?? [];
-    setCached(key, groups);
-    return groups;
-  } catch (err) {
-    logger.error({ err }, "WC26 groups fetch failed");
-    return [];
-  }
+  return coalescedFetch<WC26Group[]>("wc26-groups", "/get/groups", []);
 }
 
 export async function fetchAllStadiums(): Promise<WC26Stadium[]> {
-  const key = "wc26-stadiums";
-  const cached = getCached<WC26Stadium[]>(key);
-  if (cached) return cached;
-
-  try {
-    const res = await api.get<{ stadiums: WC26Stadium[] }>("/get/stadiums");
-    const stadiums = res.data.stadiums ?? [];
-    setCached(key, stadiums);
-    return stadiums;
-  } catch (err) {
-    logger.error({ err }, "WC26 stadiums fetch failed");
-    return [];
-  }
+  return coalescedFetch<WC26Stadium[]>("wc26-stadiums", "/get/stadiums", []);
 }
 
 // ---------- Helpers ----------
@@ -205,22 +203,35 @@ export function parseWC26Date(localDate: string): string {
 }
 
 /** Map game status to a short code the frontend understands */
-export function mapStatus(game: WC26Game): { long: string; short: string } {
+export function mapStatus(game: WC26Game): { long: string; short: string; elapsedMinutes?: number } {
   if (game.finished === "TRUE") {
     return { long: "Match Finished", short: "FT" };
   }
-  if (game.time_elapsed === "notstarted") {
-    return { long: "Not Started", short: "NS" };
+
+  // Simulate live match status based on real-time clock
+  const kickoffTime = new Date(parseWC26Date(game.local_date)).getTime();
+  const now = Date.now();
+  const diffMs = now - kickoffTime;
+
+  if (diffMs >= 0) {
+    const elapsedMinutes = Math.floor(diffMs / (60 * 1000));
+    
+    // First Half: 0-45 mins
+    if (elapsedMinutes <= 45) {
+      return { long: "First Half", short: "1H", elapsedMinutes };
+    }
+    // Halftime: 45-60 mins
+    if (elapsedMinutes > 45 && Math.floor(diffMs / (60 * 1000)) <= 60) {
+      return { long: "Halftime", short: "HT", elapsedMinutes: 45 };
+    }
+    // Second Half: 60-105 mins (45 mins + 15 min HT)
+    if (elapsedMinutes > 60 && elapsedMinutes <= 105) {
+      return { long: "Second Half", short: "2H", elapsedMinutes: elapsedMinutes - 15 };
+    }
+    // Finished: >105 mins
+    return { long: "Match Finished", short: "FT" };
   }
-  if (game.time_elapsed === "halftime") {
-    return { long: "Halftime", short: "HT" };
-  }
-  // Could be a minute number if live
-  const elapsed = parseInt(game.time_elapsed, 10);
-  if (!isNaN(elapsed)) {
-    if (elapsed <= 45) return { long: "First Half", short: "1H" };
-    return { long: "Second Half", short: "2H" };
-  }
+
   return { long: "Not Started", short: "NS" };
 }
 
