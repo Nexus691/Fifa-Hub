@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useHealthCheck } from "@workspace/api-client-react";
+import { 
+  useHealthCheck,
+  useGetUpcomingFixtures,
+  useGetRecentFixtures,
+  useGetStandings,
+  useGetNews,
+  useGetTeams
+} from "@workspace/api-client-react";
 
 const INSIGHTS = [
   "The 2026 World Cup will be the first to feature 48 teams, expanding from the traditional 32.",
@@ -21,12 +28,21 @@ export function BootLoader({ onReady }: { onReady: () => void }) {
 
   // Poll backend health every 3 seconds
   // The component will unmount when onReady is called, naturally stopping the interval
-  const { data: health, isSuccess } = useHealthCheck({
+  const { data: health, isSuccess: isHealthOk } = useHealthCheck({
     query: {
       refetchInterval: 3000, 
       retry: false, 
     },
   });
+
+  const upcoming = useGetUpcomingFixtures({ limit: 6 }, { query: { enabled: isHealthOk } });
+  const recent = useGetRecentFixtures({ limit: 4 }, { query: { enabled: isHealthOk } });
+  const standings = useGetStandings({ query: { enabled: isHealthOk } });
+  const news = useGetNews({ query: { enabled: isHealthOk } });
+  const teams = useGetTeams({ query: { enabled: isHealthOk } });
+
+  const allDataFetched = [upcoming, recent, standings, news, teams].every(q => q.isSuccess || q.isError);
+  const allReady = isHealthOk && allDataFetched;
 
   // Handle Insight rotation (every 8s)
   useEffect(() => {
@@ -47,7 +63,7 @@ export function BootLoader({ onReady }: { onReady: () => void }) {
     let frame: number;
 
     const updateProgress = () => {
-      if (isSuccess) {
+      if (allReady) {
         setProgress(100);
         setTimeout(onReady, 800); // Give bar time to visually reach 100%
         return;
@@ -62,7 +78,7 @@ export function BootLoader({ onReady }: { onReady: () => void }) {
 
     frame = requestAnimationFrame(updateProgress);
     return () => cancelAnimationFrame(frame);
-  }, [isSuccess, onReady]);
+  }, [allReady, onReady]);
 
   return (
     <div 
@@ -103,7 +119,7 @@ export function BootLoader({ onReady }: { onReady: () => void }) {
         <div className="w-full flex justify-between items-center text-xs text-gray-500 font-mono tracking-wider mb-16">
           <span>{Math.floor(progress)}%</span>
           <span>
-            {isSuccess 
+            {allReady 
               ? "READY" 
               : `ETA: ${Math.max(0, Math.ceil(50 - (progress / 100) * 50))}s`}
           </span>
