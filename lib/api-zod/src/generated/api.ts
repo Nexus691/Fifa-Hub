@@ -231,6 +231,18 @@ export const GetFixtureResponse = zod.object({
   "group": zod.string().nullish(),
   "round": zod.string().nullish(),
   "elapsed": zod.number().nullish(),
+  "keyPlayers": zod.array(zod.object({
+  "id": zod.number(),
+  "name": zod.string(),
+  "number": zod.number().nullish(),
+  "position": zod.string(),
+  "age": zod.number().nullish(),
+  "photo": zod.string().nullish()
+})).optional(),
+  "insights": zod.array(zod.object({
+  "category": zod.string(),
+  "text": zod.string()
+})).optional(),
   "events": zod.array(zod.object({
   "time": zod.number().nullish(),
   "teamId": zod.number().nullish(),

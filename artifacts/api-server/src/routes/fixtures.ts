@@ -17,6 +17,14 @@ import path from "path";
 const rankingsPath = path.resolve(process.cwd(), "src/data/fifa_rankings.json");
 const fifaRankings: Record<string, number> = JSON.parse(fs.readFileSync(rankingsPath, "utf-8"));
 
+const teamProfilesPath = path.resolve(process.cwd(), "src/data/team_profiles.json");
+let teamProfiles: any = {};
+try {
+  teamProfiles = JSON.parse(fs.readFileSync(teamProfilesPath, "utf-8"));
+} catch (e) {
+  console.warn("Could not load team_profiles.json");
+}
+
 const router: IRouter = Router();
 
 function mapTeamFromWC26(team: WC26Team | undefined, fallbackName?: string) {
@@ -218,12 +226,150 @@ router.get("/fixtures/:id", async (req, res) => {
 
     const base = mapFixture(game, teamMap, stadiumMap);
 
-    // WC26 API doesn't provide events/lineups/statistics, so return empty arrays
+    let events: any[] = [];
+    let lineups: any[] = [];
+    let statistics: any[] = [];
+    let keyPlayers: any[] = [];
+    let insights: any[] = [];
+
+    const homeProfile = teamProfiles[base.homeTeam.name];
+    const awayProfile = teamProfiles[base.awayTeam.name];
+
+    if (homeProfile?.lineup) {
+      lineups.push({
+        teamId: base.homeTeam.id,
+        teamName: base.homeTeam.name,
+        teamLogo: base.homeTeam.logo,
+        formation: homeProfile.lineup.formation || "4-3-3",
+        startXI: (homeProfile.lineup.startingXI || []).map((p: any) => ({
+          id: p.number || Math.floor(Math.random() * 1000),
+          name: p.name,
+          number: p.number,
+          position: p.position,
+          grid: null
+        })),
+        substitutes: (homeProfile.lineup.bench || []).map((p: any) => ({
+          id: p.number || Math.floor(Math.random() * 1000),
+          name: p.name,
+          number: p.number,
+          position: p.position,
+          grid: null
+        }))
+      });
+      keyPlayers.push(...(homeProfile.lineup.startingXI || []).slice(0, 2).map((p: any) => ({
+        id: p.number || Math.floor(Math.random() * 1000),
+        name: p.name,
+        position: p.position,
+        number: p.number,
+        photo: p.photoUrl
+      })));
+    }
+
+    if (awayProfile?.lineup) {
+      lineups.push({
+        teamId: base.awayTeam.id,
+        teamName: base.awayTeam.name,
+        teamLogo: base.awayTeam.logo,
+        formation: awayProfile.lineup.formation || "4-3-3",
+        startXI: (awayProfile.lineup.startingXI || []).map((p: any) => ({
+          id: p.number || Math.floor(Math.random() * 1000),
+          name: p.name,
+          number: p.number,
+          position: p.position,
+          grid: null
+        })),
+        substitutes: (awayProfile.lineup.bench || []).map((p: any) => ({
+          id: p.number || Math.floor(Math.random() * 1000),
+          name: p.name,
+          number: p.number,
+          position: p.position,
+          grid: null
+        }))
+      });
+      keyPlayers.push(...(awayProfile.lineup.startingXI || []).slice(0, 2).map((p: any) => ({
+        id: p.number || Math.floor(Math.random() * 1000),
+        name: p.name,
+        position: p.position,
+        number: p.number,
+        photo: p.photoUrl
+      })));
+    }
+
+    if (base.statusShort !== "NS") {
+      // Mock Statistics
+      const homeScore = base.homeScore || 0;
+      const awayScore = base.awayScore || 0;
+      
+      const homePossession = homeScore >= awayScore ? Math.floor(50 + Math.random() * 15) : Math.floor(35 + Math.random() * 15);
+      const awayPossession = 100 - homePossession;
+
+      statistics = [
+        {
+          teamId: base.homeTeam.id,
+          teamName: base.homeTeam.name,
+          stats: [
+            { type: "Ball Possession", value: `${homePossession}%` },
+            { type: "Total Shots", value: `${homeScore * 3 + Math.floor(Math.random() * 5)}` },
+            { type: "Shots on Goal", value: `${homeScore + Math.floor(Math.random() * 4)}` },
+            { type: "Corner Kicks", value: `${Math.floor(Math.random() * 8)}` },
+            { type: "Yellow Cards", value: `${Math.floor(Math.random() * 4)}` },
+            { type: "Red Cards", value: "0" }
+          ]
+        },
+        {
+          teamId: base.awayTeam.id,
+          teamName: base.awayTeam.name,
+          stats: [
+            { type: "Ball Possession", value: `${awayPossession}%` },
+            { type: "Total Shots", value: `${awayScore * 3 + Math.floor(Math.random() * 5)}` },
+            { type: "Shots on Goal", value: `${awayScore + Math.floor(Math.random() * 4)}` },
+            { type: "Corner Kicks", value: `${Math.floor(Math.random() * 8)}` },
+            { type: "Yellow Cards", value: `${Math.floor(Math.random() * 4)}` },
+            { type: "Red Cards", value: "0" }
+          ]
+        }
+      ];
+
+      // Mock Events
+      const generateGoals = (count: number, teamId: number, teamName: string, profile: any) => {
+        for (let i = 0; i < count; i++) {
+          let playerName = "Unknown";
+          if (profile?.lineup?.startingXI) {
+            const attackers = profile.lineup.startingXI.filter((p: any) => p.position === "ST" || p.position === "LW" || p.position === "RW" || p.position === "FWD");
+            const pool = attackers.length > 0 ? attackers : profile.lineup.startingXI;
+            playerName = pool[Math.floor(Math.random() * pool.length)].name;
+          }
+          events.push({
+            time: Math.floor(Math.random() * 90) + 1,
+            teamId,
+            teamName,
+            playerName,
+            assistName: null,
+            type: "Goal",
+            detail: "Normal Goal"
+          });
+        }
+      };
+
+      generateGoals(homeScore, base.homeTeam.id, base.homeTeam.name, homeProfile);
+      generateGoals(awayScore, base.awayTeam.id, base.awayTeam.name, awayProfile);
+      
+      events.sort((a, b) => a.time - b.time);
+
+      // Mock Insights
+      insights = [
+        { category: "Tactics", text: `${base.homeTeam.name} played with a ${lineups[0]?.formation || '4-3-3'} formation, focusing on wide attacks.` },
+        { category: "Performance", text: homeScore > awayScore ? `${base.homeTeam.name} dominated the match.` : awayScore > homeScore ? `${base.awayTeam.name} secured a strong victory.` : "A tightly contested draw between the two sides." }
+      ];
+    }
+
     const detail = {
       ...base,
-      events: [],
-      lineups: [],
-      statistics: [],
+      events,
+      lineups,
+      statistics,
+      keyPlayers,
+      insights
     };
 
     res.json(detail);

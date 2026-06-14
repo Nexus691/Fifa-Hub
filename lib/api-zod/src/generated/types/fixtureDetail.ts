@@ -8,7 +8,9 @@
 import type { Lineup } from './lineup';
 import type { MatchEvent } from './matchEvent';
 import type { MatchStatistic } from './matchStatistic';
+import type { Player } from './player';
 import type { Team } from './team';
+import type { TeamInsight } from './teamInsight';
 
 export interface FixtureDetail {
   id: number;
@@ -34,6 +36,8 @@ export interface FixtureDetail {
   round?: string | null;
   /** @nullable */
   elapsed?: number | null;
+  keyPlayers?: Player[];
+  insights?: TeamInsight[];
   events?: MatchEvent[];
   lineups?: Lineup[];
   statistics?: MatchStatistic[];

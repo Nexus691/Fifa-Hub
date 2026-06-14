@@ -257,6 +257,8 @@ export interface FixtureDetail {
   round?: string | null;
   /** @nullable */
   elapsed?: number | null;
+  keyPlayers?: Player[];
+  insights?: TeamInsight[];
   events?: MatchEvent[];
   lineups?: Lineup[];
   statistics?: MatchStatistic[];

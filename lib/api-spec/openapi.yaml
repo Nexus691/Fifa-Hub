@@ -487,6 +487,14 @@ components:
           type: ["string", "null"]
         elapsed:
           type: ["integer", "null"]
+        keyPlayers:
+          type: array
+          items:
+            $ref: "#/components/schemas/Player"
+        insights:
+          type: array
+          items:
+            $ref: "#/components/schemas/TeamInsight"
         events:
           type: array
           items:

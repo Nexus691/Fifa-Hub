@@ -53,7 +53,7 @@ export function TabStats({ fixture }: { fixture: FixtureDetail }) {
         <section>
           <h3 className="font-display tracking-widest text-primary uppercase text-sm mb-4">Attack Momentum</h3>
           <div className="bg-card border border-border rounded-xl p-6 text-center text-muted-foreground text-sm py-12 h-64 flex flex-col justify-center">
-            <p>Momentum chart will be available during live match.</p>
+            <p>{fixture.statusShort === "NS" ? "Momentum chart will be available during live match." : "Momentum chart is unavailable for this match."}</p>
           </div>
         </section>
 

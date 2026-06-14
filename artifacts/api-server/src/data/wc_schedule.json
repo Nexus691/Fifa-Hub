@@ -23,7 +23,7 @@
     "team1": "Kanada",
     "team2": "Bosnien und Herzegowina",
     "group": "Gruppenphase 1",
-    "isFinished": false,
+    "isFinished": true,
     "location": null
   },
   {
